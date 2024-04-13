@@ -184,25 +184,25 @@
        
 
         var f2 = document.createElement("h5")
-        f2.innerText= "₹" + mod[index]["market_data"]["current_price"]["inr"].toFixed(4)
+        f2.innerText= "₹" + mod[index]["market_data"]["current_price"]["inr"].toFixed(4);
         f2.setAttribute("style","color:red");
         a2.appendChild(f2)
 
         var g2 = document.getElementById("inr");
         g2.addEventListener("click", () => {
-          f2.innerText = "₹" + mod[index]["market_data"]["current_price"]["inr"];
+          f2.innerText = "₹" + mod[index]["market_data"]["current_price"]["inr"].toFixed(4);
           console.log(mod[i]["market_data"]["current_price"]["inr"]);
         });
 
         var h2 = document.getElementById("usd");
         h2.addEventListener("click", () => {
-          f2.innerText = "$" + mod[index]["market_data"]["current_price"]["usd"];
+          f2.innerText = "$" + mod[index]["market_data"]["current_price"]["usd"].toFixed(4);
           console.log(mod[0]["market_data"]["current_price"]["usd"]);
         });
 
         var i2 = document.getElementById("eur");
         i2.addEventListener("click", () => {
-          f2.innerText = "€" + mod[index]["market_data"]["current_price"]["eur"];
+          f2.innerText = "€" + mod[index]["market_data"]["current_price"]["eur"].toFixed(4);
         });
        
         main.appendChild(a2)
